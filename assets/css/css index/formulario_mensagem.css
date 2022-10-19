@@ -1,0 +1,28 @@
+.formulario__mensagem-titulo {
+    color: var(--cor-azul);
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.formulario__mensagem-form-titulo {
+    display: block;
+    padding: 0.6rem;
+    padding-right: 13.4rem;
+    padding-left: 13.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    border-color: var(--cor-azul);
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.formulario__mensagem {
+    margin-left: 2rem;
+}
+
+.formulario__mensagem-form-editor {
+    width: 40rem;
+    height: 22rem;
+}

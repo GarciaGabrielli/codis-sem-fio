@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codis sem fio | Liberar Acesso</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <link rel="favicon" href="./assets/img/favicon.ico">
+
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/variaveis.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/hamburguer.css">
+        <link rel="stylesheet" href="./assets/css/css liberar/liberar.css">
+        <link rel="stylesheet" href="./assets/css/css liberar/liberar_acesso.css">
+        <link rel="stylesheet" href="./assets/css/css liberar/usuarios_liberados.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+
+        <header class="cabecalho">
+            <div class="cabecalho__fundo"></div>
+            <div class="cabecalho__titulos">
+                <a class="cabecalho__titulos-link" href="index.html">
+                    <h1 class="cabecalho__titulo-principal">Codis sem fio</h1>
+                    <h2 class="cabecalho__titulo-subtitulo">Plataforma de envio de email</h2>
+                    <img src="./assets/img/svg/envelope_cabecalho.svg" class="cabecalho__titulo-logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a class="menuItem home" href="index.html">Home</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem liberar" href="liberar.html">Liberar</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem relatorio" href="relatorio.html">Relatório</a></li>
+            </ul>
+            <button class="hamburger">
+                <element onload="hamburger.js"></element>
+                
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </header>
+
+        <main class="liberar">
+
+            <div class="liberar_acesso">
+                <h1 class="liberar_acesso__titulo">Liberar acesso a novos usuários</h1>
+                <form class="liberar_acesso__formulario">
+                    <label class="liberar_acesso__formulario-titulo" for="cpf">Digite o CPF:</label>
+                    <img class="liberar_acesso__formulario-icone" src="./assets/img/svg/procurar_pessoa_icone_branco.svg">
+                    <div class="liberar_acesso__formulario-input-fundo">
+                        <input class="liberar_acesso__formulario-cpf" type="text" id="cpf" minlength="12" maxlength="14" placeholder="xxx.xxx.xxx-xx" value="" autocomplete="off">
+                    </div>
+                </form>
+                <p class="liberar_acesso__descricao_usuario_encontrado">Usuário encontrado:</p>
+                <div class="liberar_acesso__usuario_encontrado_container">
+                    <img class="liberar_acesso__usuario_encotrado_container-foto_perfil" src="./assets/img/svg/foto_perfil_novo_usuario.svg">
+                    <p class="liberar_acesso__usuario_encontrado_container-nome-usuario">Novo usuário</p>
+                    <p class="liberar_acesso__usuario_encontrado_container-cpf-usuario"></p>
+                </div>
+                <button class="liberar_acesso__botao_liberar_acesso">Liberar acesso</button>
+            </div>
+
+            <div class="separador">
+                <img class="imagem__separador" src="./assets/img/svg/linha_para_separar.svg">
+            </div>
+
+            <div class="usuarios_liberados">
+                <h1 class="usuarios_liberados-titulo">Usuários Liberados</h1>
+                <img class="usuarios_liberados__buscar-usuarios_icone" src="./assets/img/svg/procurar_pessoas_icone_cinza.svg">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label">Insira o nome do usuario</label>
+                <div class="usuarios_liberados__usuarios_liberados">
+                    <div class="usuarios_liberados__usuarios_liberados__usuarios">
+                        <img src="./assets/img/svg/marcelo_bacon_foto_perfil.svg" class="usuarios_liberados__usuarios_liberados__usuarios-foto_perfil">
+                        <p class="usuarios_liberados__usuarios_liberados__usuarios-nome_usuario">Marcelo Bacon</p>
+                        <div class="usuarios_liberados__usuarios_liberados__usuarios-botoes">
+                            <button class="usuarios_liberados__usuarios_liberados__usuarios-emails">Ver emails</button>
+                            <img class="usuarios_liberados__usuarios_liberados__usuarios-email-icon" src="./assets/img/svg/icon_envelope_branco.svg">
+                            <button class="usuarios_liberados__usuarios_liberados__usuarios-remover">Remover</button>
+                            <img src="./assets/img/svg/icon_fechar_branco.svg" class="usuarios_liberados__usuarios_liberados__usuarios-remover-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="./assets/js/hamburguer.js"></script>
+    <script src="./assets/js/cpf.js"></script>
+    <script src="./assets/js/excluirUsuario.js"></script>
+    <script src="./assets/js/adicionarUsuario.js"></script>
+</html>

@@ -1,0 +1,24 @@
+.liberar {
+    display: flex;
+}
+
+@media only screen and (min-device-width: 1600px){
+    .separador {
+        margin-left: 10.9rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px){
+    .separador {
+        margin-left: 17.5rem;
+        margin-top: 0.1rem;
+        background-image: url(../../img/svg/linha_para_separar_1600px.svg);
+        width: 0.05rem;
+        height: 46rem;
+        background-color: var(--cor-azul);
+    }
+
+    .imagem__separador {
+        display: none;
+    }
+}

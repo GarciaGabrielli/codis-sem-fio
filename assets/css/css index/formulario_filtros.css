@@ -1,0 +1,197 @@
+.formulario__filtros-titulo {
+    font-size: 2.6rem;
+    color: var(--cor-azul);
+    position: absolute;
+    right: 13rem;
+}
+
+.formulario__filtros-filtros-titulos {                    
+    color: var(--cor-azul);
+    font-weight: bolder;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    position: absolute;
+    height: 3rem;
+}
+
+.formulario__filtros-filtros-posicao {
+    position: absolute;
+    height: 2rem;
+    width: 28.367rem;
+    border-color: var(--cor-azul);
+    background-color: var(--cor-branca);
+    text-align: center;
+    font-weight: bolder;
+    color: var(--cor-azul);
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+}
+
+.formulario__filtros-filtros-nre-titulo {
+    width: 3.438rem;
+    top: 14.938rem;
+}
+
+.formulario__filtros-filtros-nre {
+    top: 15.25rem;
+}
+
+.formulario__filtros-filtros-municipio-titulo {
+    width: 7.625rem;
+    top: 17.313rem;
+}
+
+.formulario__filtros-filtros-municipio {
+    top: 17.75rem;
+}
+   
+.formulario__filtros-filtros-escola-titulo {
+    width: 5.125rem;
+    top: 19.563rem;
+}
+
+.formulario__filtros-filtros-escola {
+    top: 20.429rem;
+}
+
+.formulario__filtros-filtros-modalidade-titulo {
+    width: 9.063rem;
+    top: 22.063rem;
+}
+
+.formulario__filtros-filtros-modalidade {
+    top: 23.054rem;
+}
+
+.formulario__filtros-filtros-etapa-titulo {
+    width: 4.625rem;
+    top: 24.625rem;
+}
+
+.formulario__filtros-filtros-etapa {
+    top: 25.492rem;
+}
+
+.formulario__filtros-filtros-disciplina-titulo {
+    width: 7.625rem;
+    top: 27.438rem;
+}
+
+.formulario__filtros-filtros-disciplina {
+    top: 28.438rem;
+}
+
+.formulario__filtros-total-email {
+    position: absolute;
+    top: 35rem;
+    right: 6rem;
+}
+
+.formulario__filtros-total-email-titulo {
+    color: var(--cor-azul);
+    font-size: 1.7rem;
+}
+
+.formulario__filtros-total-email-caixa {
+    display: flex;
+}
+
+.formulario__filtros-total-email-caixa-conteudo {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    border: solid 0.1rem var(--cor-azul);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.formulario__filtros-total-email-caixa-imagem {
+    width: 2rem;
+    margin-top: 0.2rem;
+}
+
+.formulario__filtros-adicionar-imagens {
+    position: absolute;
+    top: 34rem;
+    left: 60rem;
+}
+
+.formulario__filtros-adicionar-imagens-titulo {
+    color: var(--cor-azul);
+    font-size: 1.7rem;
+}
+
+.formulario__filtros-adicionar-imagens-caixa {
+    background-color: var(--cor-azul);
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.formulario__filtros-adicionar-imagens-caixa-desc {
+    color: var(--cor-branca);
+}
+
+.formulario__filtros-adicionar-imagens-caixa-imagem {
+    position: absolute;
+    top: 2.4rem;
+    right: 1rem;
+}
+
+@media only screen and (min-device-width: 1600px){
+
+    .formulario__filtros-titulo {
+        margin-left: 8.8rem;
+        margin-top: 0.2rem;
+    }
+
+    .formulario__filtros-filtros-titulos {
+        left: 53.688rem;
+    }
+
+    .formulario__filtros-filtros-nre {
+        left: 65.813rem;
+    }
+
+    .formulario__filtros-filtros-municipio {
+        left: 65.813rem;
+    }
+
+    .formulario__filtros-filtros-escola {
+        left: 65.821rem;
+    }
+
+    .formulario__filtros-filtros-modalidade {
+        left: 65.821rem;
+    }
+
+    .formulario__filtros-filtros-etapa {
+        left: 65.821rem;
+    }
+
+    .formulario__filtros-filtros-disciplina {
+        left: 65.813rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px){
+
+    .formulario__filtros-titulo {
+        margin-left: 0;
+        margin-right: 6rem;
+        margin-top: 1rem;
+    }
+
+    .formulario__filtros-filtros-titulos {
+        left: 63.688rem;
+    }
+
+    .formulario__filtros-filtros-nre, .formulario__filtros-filtros-municipio, .formulario__filtros-filtros-escola, .formulario__filtros-filtros-modalidade, .formulario__filtros-filtros-etapa, .formulario__filtros-filtros-disciplina {
+        left: 76rem;
+    }
+
+}

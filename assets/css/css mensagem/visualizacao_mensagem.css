@@ -1,0 +1,45 @@
+.visualizacao_mensagem {
+    margin-top: 4.5rem;
+    background-color: var(--cor-azul);
+    margin-left: 4rem;
+    box-shadow: 31.08px 0px 23px lightgray;
+    border-radius: 0.2rem;
+}
+
+.visualizacao_mensagem-titulo {
+    font-size: 2rem;
+    color: var(--cor-branca);
+    margin-top: 1rem;
+    padding-left: 15rem;
+    border-top: solid 0.1rem rgba(0, 0, 0, 35%);
+    border-bottom: solid 0.1rem rgba(0, 0, 0, 35%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.visualizacao_mensagem-conteudo {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 71%);
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+@media only screen and (min-device-width: 1600px){
+    .visualizacao_mensagem {
+        padding-bottom: 24rem;
+    }
+
+    .visualizacao_mensagem-titulo {
+        padding-right: 15rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px){
+    .visualizacao_mensagem {
+        padding-bottom: 35rem;
+    }
+
+    .visualizacao_mensagem-titulo {
+        padding-right: 18rem;
+    }
+}

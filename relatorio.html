@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codis sem fio | Relatório</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <link rel="favicon" href="./assets/img/favicon.ico">
+
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/variaveis.css">
+        <link rel="stylesheet" href="./assets/css/hamburguer.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/css relatorio/relatorio.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho__fundo"></div>
+            <div class="cabecalho__titulos">
+                <a class="cabecalho__titulos-link" href="index.html">
+                    <h1 class="cabecalho__titulo-principal">Codis sem fio</h1>
+                    <h2 class="cabecalho__titulo-subtitulo">Plataforma de envio de email</h2>
+                    <img src="./assets/img/svg/envelope_cabecalho.svg" class="cabecalho__titulo-logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a class="menuItem home" href="index.html">Home</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem liberar" href="liberar.html">Liberar</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem relatorio" href="relatorio.html">Relatório</a></li>
+            </ul>
+            <button class="hamburger">
+                <element onload="hamburger.js"></element>
+                
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </header>
+
+        <main class="relatorio">
+            <h1 class="relatorio__titulo">Relatório</h1>
+            <div class="relatorio__input-pesquisar_mensagem">
+                <img class="relatorio__input-pesquisar_mesagem-icon-envelope" src="./assets/img/svg/pesquisar_email_icon.svg">
+                <input class="relatorio__input-pesquisar-mensagem-input" type="text" placeholder="Pesquisar mensagem">
+                <img class="relatorio__input-pesquisar-mensagem-icon-filtros" src="./assets/img/svg/filtros_icon.svg">
+            </div>
+
+            <div class="relatorio__caixa_de_email-fundo">
+                <ol class="relatorio__caixa_de_email-lista-info-titulo">
+                    <li class="relatorio__caixa_de_email-lista-info-item relatorio__caixa_de_email-lista-info-item-data">Data</li>
+                    <li class="relatorio__caixa_de_email-lista-info-item relatorio__caixa_de_email-lista-info-enviado_por">Email enviado por</li>
+                    <li class="relatorio__caixa_de_email-lista-info-item relatorio__caixa_de_email-lista-info-item-titulo">Titulo da mensagem</li>
+                    <li class="relatorio__caixa_de_email-lista-info-item relatorio__caixa_de_email-lista-info-item-preview">Preview da mensagem</li>
+                    <li class="relatorio__caixa_de_email-lista-info-item-diferente relatorio__caixa_de_email-lista-info-item-filtros_totais">Filtros totais</li>
+                </ol>
+                <ol class="relatorio__caixa_de_email-email_exemplo email1">
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-email_exemplo-item-data-email">16/12/2022</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-email_exemplo-item-enviado_por-email">Marcelo Bacon</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-lista-info-item-titulo-email">Atualização Redação Paraná</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-lista-info-item-preview-email">blablablablablablablablabla</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-lista-info-item-filtros_totais-email">350</li>
+                </ol>
+
+                <ol class="relatorio__caixa_de_email-email_exemplo relatorio__caixa_de_email_exemplo-2 email2">
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-email_exemplo-item-data-email">23/09/2022</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-email_exemplo-item-enviado_por-email">Sergio Andrew</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-lista-info-item-titulo-email">Atualização de alguma coisa</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-lista-info-item-preview-email">blablablablablablablablabla</li>
+                    <li class="relatorio__caixa_de_email-email_exemplo-item relatorio__caixa_de_email-lista-info-item-filtros_totais-email">200</li>
+                </ol>      
+            </div>
+        </main>
+    </body>
+
+    <script src="./assets/js/hamburguer.js"></script>
+    <script src="./assets/js/email.js"></script>
+</html>

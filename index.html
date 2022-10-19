@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codis sem fio</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+            
+        <link rel="favicon" href="./assets/img/favicon.ico">
+
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/variaveis.css">
+        <link rel="stylesheet" href="./assets/css/hamburguer.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/css index/index.css">
+        <link rel="stylesheet" href="./assets/css/css index/formulario_mensagem.css">
+        <link rel="stylesheet" href="./assets/css/css index/formulario_filtros.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho__fundo"></div>
+            <div class="cabecalho__titulos">
+                <a class="cabecalho__titulos-link" href="index.html">
+                    <h1 class="cabecalho__titulo-principal">Codis sem fio</h1>
+                    <h2 class="cabecalho__titulo-subtitulo">Plataforma de envio de email</h2>
+                    <img src="./assets/img/svg/envelope_cabecalho.svg" class="cabecalho__titulo-logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a class="menuItem home" href="index.html">Home</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem liberar" href="liberar.html">Liberar</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem relatorio" href="relatorio.html">Relatório</a></li>
+            </ul>
+            <button class="hamburger">
+                <element onload="hamburger.js"></element>
+                
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </header>
+        <main class="principal">
+            <div class="formulario__mensagem">
+                <h1 class="formulario__mensagem-titulo">Nova mensagem</h1>
+                <form class="formulario__mensagem-form">
+                    <input type="text" class="formulario__mensagem-form-titulo" placeholder="Insira o titulo">
+                    <div id="editor" class="formulario__mensagem-form-editor">
+                    </div>
+                </form>
+
+                <div class="separador">
+                    <div class="separador__linha">
+                        <img class="separador__linha-imagem" src="./assets/img/svg/linha_para_separar.svg">
+                     </div>
+                    <button class="enviar_email">Enviar email</button>
+                </div>
+            </div>
+
+            <div class="formulario__filtros">
+                <h1 class="formulario__filtros-titulo">Filtros de envio</h1>
+                <div class="formulario__filtros-filtros">
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-nre-titulo formulario__filtros-filtros-titulos">NRE:</p>
+                            <select name="nre" class="formulario__filtros-filtros-nre formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-municipio-titulo formulario__filtros-filtros-titulos">Munícipio:</p>
+                            <select name="municipio" class="formulario__filtros-filtros-municipio formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-escola-titulo formulario__filtros-filtros-titulos">Escola:</p>
+                            <select value="" name="escola" class="formulario__filtros-filtros-escola formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>  
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-modalidade-titulo formulario__filtros-filtros-titulos">Modalidade:</p>
+                            <select value="" name="modalidade" class="formulario__filtros-filtros-modalidade formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>    
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-etapa-titulo formulario__filtros-filtros-titulos">Etapa:</p>
+                            <select value="" name="etapa" class="formulario__filtros-filtros-etapa formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>  
+                    </div>
+
+                    <div class="formulario__filtros-filtros-div">
+                        <p class="formulario__filtros-filtros-disciplina-titulo formulario__filtros-filtros-titulos">Disciplina:</p>
+                            <select value="" name="disciplina" class="formulario__filtros-filtros-disciplina formulario__filtros-filtros-posicao" autocomplete="off">
+                                <option value="todas">Todas</option>
+                                <option value="exemplo">Exemplo de opção</option>
+                            </select>    
+                    </div>
+
+                </div>
+
+                <div class="formulario__filtros-total-email">
+                    <h1 class="formulario__filtros-total-email-titulo">Total de e-mails:</h1>
+                    <div class="formulario__filtros-total-email-caixa">
+                        <p class="formulario__filtros-total-email-caixa-conteudo">xxxxxxxx</p>
+                        <img src="./assets/img/svg/total_emails.svg" class="formulario__filtros-total-email-caixa-imagem">
+                    </div>
+                </div>
+                <div class="formulario__filtros-adicionar-imagens">
+                    <h1 class="formulario__filtros-adicionar-imagens-titulo">Adicionar imagens</h1>
+                    <div class="formulario__filtros-adicionar-imagens-caixa">
+                        <p class="formulario__filtros-adicionar-imagens-caixa-desc">Cole a URL da imagem</p>
+                        <input type="url" class="formulario__filtros-adicionar-imagens-caixa-input">
+                        <img src="./assets/img/svg/adicionar_imagem.svg" class="formulario__filtros-adicionar-imagens-caixa-imagem">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./assets/js/hamburguer.js"></script>
+    <script src="./assets/js/editor.js"></script>
+
+</html>

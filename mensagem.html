@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codis sem fio | Mensagem</title>
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <link rel="favicon" href="./assets/img/favicon.ico">
+            
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/variaveis.css">
+        <link rel="stylesheet" href="./assets/css/hamburguer.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/css mensagem/mensagem.css">
+        <link rel="stylesheet" href="./assets/css/css mensagem/visualizacao_mensagem.css">
+        <link rel="stylesheet" href="./assets/css/css mensagem/filtros_selecionados.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho__fundo"></div>
+            <div class="cabecalho__titulos">
+                <a class="cabecalho__titulos-link" href="index.html">
+                    <h1 class="cabecalho__titulo-principal">Codis sem fio</h1>
+                    <h2 class="cabecalho__titulo-subtitulo">Plataforma de envio de email</h2>
+                    <img src="./assets/img/svg/envelope_cabecalho.svg" class="cabecalho__titulo-logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a class="menuItem home" href="index.html">Home</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem liberar" href="liberar.html">Liberar</a></li>
+                <li class="espaco">.</li>
+                <li><a class="menuItem relatorio" href="relatorio.html">Relatório</a></li>
+              </ul>
+              <button class="hamburger">
+                <element onload="hamburger.js"></element>
+                
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button>
+        </header>
+        <main class="mensagem">
+            <img src="./assets/img/svg/linha_enfeite_mensagem.svg" class="mensagem__linha_cima">
+            <p class="mensagem_enviada_por">Email enviado por Sérgio no dia 16/09/2022 às 14:15:42</p>
+            
+            <div class="visualizacao_mensagem">
+                <h1 class="visualizacao_mensagem-titulo">Título da mensagem</h1>
+                <p class="visualizacao_mensagem-conteudo">Conteúdo da mensagem</p>
+            </div>
+    
+            <div class="filtros_selecionados">
+                <h1 class="filtros_selecionados-titulo">Filtros selecionados:</h1>
+
+                <div class="filtros_selecionados-filtros_selecionados">
+                    <div class="filtros_selecionados-filtros_selecionados__total filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__total-titulo">Total:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__total-caixa filtros_selecionados-filtros_selecionados__caixa">XXXXXX</p>
+                    </div>
+                    <div class="filtros_selecionados-filtros_selecionados__nre filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__nre-titulo">NRE:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__nre-caixa filtros_selecionados-filtros_selecionados__caixa">Todas</p>
+                    </div>
+                    <div class="filtros_selecionados-filtros_selecionados__escola filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__escola-titulo">Escola:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__escola-caixa filtros_selecionados-filtros_selecionados__caixa">Todas</p>
+                    </div>
+                    <div class="filtros_selecionados-filtros_selecionados__etapa filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__etapa-titulo">Etapa:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__etapa-caixa filtros_selecionados-filtros_selecionados__caixa">Todas</p>
+                    </div>
+                    <div class="filtros_selecionados-filtros_selecionados__municipio filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__municipio-titulo">Munícipio:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__municipio-caixa filtros_selecionados-filtros_selecionados__caixa">Todas</p>
+                    </div>
+                    <div class="filtros_selecionados-filtros_selecionados__modalidade filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__modalidade-titulo">Modalidade:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__modalidade-caixa filtros_selecionados-filtros_selecionados__caixa">Todas</p>
+                    </div>
+                    <div class="filtros_selecionados-filtros_selecionados__disciplina filtros_selecionados-filtros_selecionados-filtros">
+                        <p class="filtros_selecionados-filtros_selecionados__disciplina-titulo">Disciplina:</p>
+                        <p class="filtros_selecionados-filtros_selecionados__disciplina-caixa filtros_selecionados-filtros_selecionados__caixa">Todas</p>
+                    </div>
+                </div>
+    
+                <p class="filtros_selecionados-logs_titulo">Logs:</p>
+                
+                <div class="filtros_selecionados-logs">
+                    <div class="filtros_selecionados-logs__enviados">
+                        <p class="filtros_selecionados-logs__enviados-conteudo">Enviados (93/319)</p>
+                        <button class="filtros_selecionados-logs__enviados-botao">Ler log</button>
+                    </div>
+    
+                    <div class="filtros_selecionados-logs__erro">
+                        <p class="filtros_selecionados-logs__erro-conteudo">Erros ao enviar (2/319)</p>
+                        <button class="filtros_selecionados-logs__erro-botao">Ler log</button>
+                    </div>
+    
+                    <div class="filtros_selecionados-logs__falta">
+                        <p class="filtros_selecionados-logs__falta-conteudo">Falta enviar (226)</p>
+                        <button class="filtros_selecionados-logs__falta-botao">Ler log</button>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/img/svg/linha_enfeite_mensagem.svg" class="mensagem__linha_baixo">
+        </main>
+    </body>
+
+    <script src="./assets/js/hamburguer.js"></script>
+</html>

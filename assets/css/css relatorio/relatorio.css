@@ -1,0 +1,170 @@
+.relatorio__titulo {
+    font-size: 2rem;
+    color: var(--cor-azul);
+    text-align: center;
+}
+
+.relatorio__input-pesquisar_mensagem {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.relatorio__input-pesquisar_mesagem-icon-envelope {
+    position: absolute;
+    width: 3rem;
+    border-right: solid 0.1rem var(--cor-azul);
+    padding-right: 1rem;
+}
+
+.relatorio__input-pesquisar-mensagem-input {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-weight: bolder;
+}
+
+.relatorio__input-pesquisar-mensagem-icon-filtros {
+    position: absolute;
+    border-left: solid 0.1rem var(--cor-azul);
+    padding-left: 0.5rem;
+    width: 2.8rem;
+}
+
+.relatorio__caixa_de_email-fundo {
+    background-color: var(--cor-azul);
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.relatorio__caixa_de_email-lista-info-titulo {
+    display: flex;
+    color: var(--cor-branca);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border-bottom: solid 0.1rem var(--cor-branca);
+    padding-bottom: 1rem;
+}
+
+.relatorio__caixa_de_email-lista-info-item {
+    margin-left: 2rem;
+    border-right: solid 0.1rem var(--cor-branca);
+    padding-right: 6rem;
+}
+
+.relatorio__caixa_de_email-lista-info-item-filtros_totais {
+    margin-left: 0rem;
+    border-left: solid 0.1rem var(--cor-branca);
+    padding-left: 1rem;
+}
+
+.relatorio__caixa_de_email-email_exemplo {
+    display: flex;
+    color: var(--cor-branca);
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.relatorio__caixa_de_email-email_exemplo:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+.relatorio__caixa_de_email-email_exemplo-item {
+    margin-left: 2rem;
+}
+
+.relatorio__caixa_de_email-lista-info-item-data {
+    margin-left: 1rem;
+    
+}
+
+.relatorio__caixa_de_email-lista-info-item-titulo {
+    border: none;
+}
+
+.relatorio__caixa_de_email-lista-info-item-preview {
+    margin-left: 20rem;
+    margin-right: 1rem;
+    border-left: solid 0.1rem var(--cor-branca);
+    border-right: none;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.relatorio__caixa_de_email-email_exemplo-item-data-email {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    padding-right: 0.5rem;
+}
+
+.relatorio__caixa_de_email-email_exemplo-item-enviado_por-email {
+    margin-left: 6rem;
+}
+
+.relatorio__caixa_de_email-lista-info-item-titulo-email {
+    margin-left: 10rem;
+}
+
+.relatorio__caixa_de_email-lista-info-item-preview-email {
+    margin-left: 27rem;
+}
+
+.relatorio__caixa_de_email-lista-info-item-filtros_totais-email {
+    margin-left: 8rem;
+}
+
+.relatorio__caixa_de_email_exemplo-2 {
+    border-top: solid 0.1rem var(--cor-branca);
+    padding-top: 1rem;
+}
+
+@media only screen and (min-device-width: 1600px){
+    .relatorio__titulo {
+        margin-left: 6rem; 
+        margin-top: 0.2rem;
+    }
+
+    .relatorio__input-pesquisar_mensagem {
+        margin-left: 39rem;
+    }
+
+    .relatorio__input-pesquisar_mesagem-icon-envelope {
+        right: 56.5rem;
+        top: 13rem;
+    }
+
+    .relatorio__input-pesquisar-mensagem-icon-filtros {
+        left: 66rem;
+    }
+
+    .relatorio__caixa_de_email-fundo {
+        padding-bottom: 21rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px){
+    .relatorio__titulo {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .relatorio__input-pesquisar_mensagem {
+        margin-left: 45rem;
+    }
+
+    .relatorio__input-pesquisar_mesagem-icon-envelope {
+        right: 70rem;
+        top: 13.8rem;
+    }
+
+    .relatorio__input-pesquisar-mensagem-icon-filtros {
+        left: 72rem;
+    }
+
+    .relatorio__caixa_de_email-fundo {
+        padding-bottom: 31rem;
+    }
+}

@@ -1,0 +1,57 @@
+.cabecalho__fundo {
+  height: 10rem;
+}
+
+.cabecalho__titulos {
+    position: absolute;
+    text-align: center;
+    top: 1rem;
+}
+
+.cabecalho__titulos-link {
+  text-decoration: none;
+}
+  
+.cabecalho__titulos-hamburguer:hover {
+    cursor: pointer;
+    width: 2.5rem;
+}
+
+.cabecalho__titulo-principal {
+    font-size: 65px;
+    color: var(--cor-branca);
+    text-transform: uppercase;
+}
+
+.cabecalho__titulo-subtitulo {
+    color: var(--cor-branca);
+    text-decoration: underline;
+}
+
+.cabecalho__titulo-logo {
+    position: absolute;
+    top: -0.5rem;
+    left: 28rem;
+}
+
+@media only screen and (min-device-width: 1600px) {
+  .cabecalho__fundo {
+    background: url(../img/svg/fundo_cabecalho.svg);
+    background-repeat: no-repeat;
+  }
+
+  .cabecalho__titulos {
+    left: 40rem;
+  }
+}
+
+@media only screen and (min-device-width: 1900px) {
+  .cabecalho__fundo {
+    background: url(../img/svg/fundo_cabecalho_1960px.svg);
+    background-repeat: no-repeat;
+  }
+
+  .cabecalho__titulos {
+    left: 46rem;
+  }
+}

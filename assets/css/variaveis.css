@@ -1,0 +1,11 @@
+:root {
+    --cor-azul: #285C8C;
+    --cor-azulcb: #004f9948;
+    --cor-azul-opacidade-81: rgba(40, 92, 140, 81%);
+    --cor-azul-claro: rgba(7, 102, 189, 54%);
+    --cor-fundo-menu: #80ACDC;
+    --cor-branca: #FFFFFF;
+    --cor-da-borda: #264D71;
+    --cor-fundo-filtros-mensagens: #3E7AB1;
+    --fonte-baloo-paaji2: 'Baloo Paaji 2', sans-serif;
+}

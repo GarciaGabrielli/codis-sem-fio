@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Baloo';
+    src: url(../font/BalooPaaji2-VariableFont_wght.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Baloo', sans-serif;
+}

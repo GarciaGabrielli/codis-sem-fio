@@ -1,0 +1,44 @@
+.mensagem {
+    display: flex;
+}
+
+.mensagem__linha_cima {
+    position: absolute;
+    width: 100%;
+}
+
+.mensagem_enviada_por {
+    position: absolute;
+    top: 12rem;
+    font-size: 1.2rem;
+    color: var(--cor-azul);
+    font-weight: bolder;
+}
+
+.mensagem__linha_baixo {
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+}
+
+@media only screen and (min-device-width: 1600px){
+
+    .mensagem__linha_cima {
+        margin-top: 0;
+    }
+
+    .mensagem_enviada_por {
+        right: 31.6rem;
+    }   
+}
+
+@media only screen and (min-device-width: 1900px){
+
+    .mensagem__linha_cima {
+        margin-top: 0.5rem;
+    }
+
+    .mensagem_enviada_por {
+        right: 46rem;
+    }
+}

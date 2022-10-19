@@ -1,0 +1,128 @@
+.filtros_selecionados {
+    margin-top: 4.5rem;
+}
+
+.filtros_selecionados-titulo {
+    color: var(--cor-azul);
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.filtros_selecionados-filtros_selecionados__total {
+    margin-top: 1rem;
+}
+
+.filtros_selecionados-filtros_selecionados-filtros {
+    display: flex;
+    margin-bottom: 1.5rem;
+    color: var(--cor-azul);
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+.filtros_selecionados-filtros_selecionados__caixa {
+    margin-left: 1rem;
+    border: solid 0.1rem var(--cor-azul);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.filtros_selecionados-filtros_selecionados__total-caixa {
+    margin-left: 3.5rem;
+}
+
+.filtros_selecionados-filtros_selecionados__nre-caixa {
+    margin-left: 4rem;
+}
+
+.filtros_selecionados-filtros_selecionados__escola-caixa {
+    margin-left: 3rem;
+}
+
+.filtros_selecionados-filtros_selecionados__etapa-caixa {
+    margin-left: 3.5rem;
+}
+
+.filtros_selecionados-filtros_selecionados__municipio-caixa {
+    margin-left: 1.8rem;
+}
+
+.filtros_selecionados-filtros_selecionados__disciplina-caixa {
+    margin-left: 2rem;
+}
+
+.filtros_selecionados-logs_titulo {
+    position: absolute;
+    bottom: 15rem;
+    right: 24rem;
+    color: var(--cor-azul);
+    font-weight: bolder;
+}
+
+.filtros_selecionados-logs {
+    position: absolute;
+    bottom: 2rem;
+    right: 6rem;
+    background: rgba(7, 102, 189, 0.54);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.14);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+.filtros_selecionados-logs__enviados, .filtros_selecionados-logs__erro, .filtros_selecionados-logs__falta {
+    display: flex;
+    padding: 0.4rem;
+    background-color: var(--cor-azul);
+    margin-bottom: 0.8rem;
+    border-radius: 0.4rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.14);
+}
+
+.filtros_selecionados-logs__enviados-conteudo, .filtros_selecionados-logs__erro-conteudo, .filtros_selecionados-logs__falta-conteudo {
+    color: var(--cor-branca);
+    font-weight: bolder;
+}
+
+.filtros_selecionados-logs__erro-conteudo {
+    margin-right: 4rem;
+}
+
+.filtros_selecionados-logs__enviados-botao, .filtros_selecionados-logs__erro-botao, .filtros_selecionados-logs__falta-botao {
+    background-color: rgba(255, 255, 255, 0.33);
+    border-color: rgba(255, 255, 255, 0.33);
+    color: var(--cor-branca);
+    font-weight: bolder;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.filtros_selecionados-logs__enviados-botao:hover, .filtros_selecionados-logs__erro-botao:hover, .filtros_selecionados-logs__falta-botao:hover {
+    cursor: pointer;
+}
+
+.filtros_selecionados-logs__enviados-botao {
+    margin-left: 6rem;
+}
+
+.filtros_selecionados-logs__falta-botao {
+    margin-left: 6rem;
+}
+
+@media only screen and (min-device-width: 1600px){
+    .filtros_selecionados {
+        margin-left: 1rem;
+        padding-right: 31rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px){
+    .filtros_selecionados {
+        margin-left: 6rem;
+        padding-right: 44rem;
+    }
+}

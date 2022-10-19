@@ -1,0 +1,159 @@
+.usuarios_liberados {
+    margin-left: 6rem;
+    position: relative; 
+}
+
+.input {
+    border: solid 1.5px #000000;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    -webkit-transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+
+    padding-right: 16rem;
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    border-color: var(--cor-azul);
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+}
+   
+.user-label {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    color: #a5a5a5;
+    pointer-events: none;
+    -webkit-transform: translateY(1rem);
+        -ms-transform: translateY(1rem);
+            transform: translateY(1rem);
+    -webkit-transition: 150ms cubic-bezier(0.4,0,0.2,1);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+   
+.input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+   
+.input:focus ~ label, input:valid ~ label {
+    -webkit-transform: translateY(-50%) scale(0.8);
+        -ms-transform: translateY(-50%) scale(0.8);
+            transform: translateY(-50%) scale(0.8);
+    background-color: #ffffff;
+    padding: 0 .2em;
+    color: #2196f3;
+}
+
+
+.usuarios_liberados-titulo {
+    color: var(--cor-azul);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.usuarios_liberados__buscar-usuarios_icone {
+    position: absolute;
+    right: 0.7rem;
+    border-left: solid 0.1rem var(--cor-azul);
+    padding-left: 0.2rem;
+}
+
+.usuarios_liberados__buscar-usuarios {
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    border-color: var(--cor-azul);
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios {
+    margin-top: 2rem;
+    display: flex;
+    background-color: #3E7AB1;
+    border-radius: 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-nome_usuario {
+    color: var(--cor-branca);
+    font-weight: bolder;
+    margin-left: 3rem;
+    font-size: 1.7rem;
+    margin-top: 0.7rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-botoes {
+    position: absolute;
+    left: 7rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-emails {
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-emails, .usuarios_liberados__usuarios_liberados__usuarios-remover {
+    background-color: var(--cor-azul);
+    border-color: var(--cor-azul);
+    border-radius: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    color: var(--cor-branca);
+    font-weight: bolder;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-emails:hover, .usuarios_liberados__usuarios_liberados__usuarios-remover:hover {
+    background-color: rgba(116, 162, 204, 0.67);
+    border-color: rgba(116, 162, 204, 0.67);
+    cursor: pointer;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-email-icon {
+    position: absolute;
+    right: 10.2rem;
+    top: 0.5rem;
+    width: 1rem;
+}
+
+.usuarios_liberados__usuarios_liberados__usuarios-remover-icon {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    width: 0.8rem;
+}
+
+.remover_usuario {
+    display: none;
+}
+
+@media only screen and (min-device-width: 1600px){
+    .usuarios_liberados-titulo {
+        margin-top: 0.4rem;
+    }
+
+    .usuarios_liberados__usuarios_liberados__usuarios-botoes {
+        top: 12rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px){
+    .usuarios_liberados-titulo {
+        margin-top: 2rem;
+    }
+
+    .usuarios_liberados__usuarios_liberados__usuarios-botoes {
+        top: 14rem;
+    }
+}

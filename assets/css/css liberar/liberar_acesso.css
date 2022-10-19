@@ -1,0 +1,128 @@
+.liberar_acesso {
+    margin-left: 12rem;
+}
+
+.liberar_acesso__titulo {
+    color: var(--cor-azul);
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.liberar_acesso__formulario {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.liberar_acesso__formulario-titulo {
+    display: block;
+    color: var(--cor-azul);
+    font-weight: bolder;
+}
+
+.liberar_acesso__formulario-input-fundo {
+    background-color: var(--cor-azul);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.liberar_acesso__formulario-cpf {
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--cor-branca);
+    background-color: var(--cor-azul);
+    border-color: var(--cor-branca);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.liberar_acesso__formulario-icone {
+    position: absolute;
+    border-left: solid 0.1rem var(--cor-branca);
+    padding-left: 0.4rem;
+    margin-left: 2rem;
+}
+
+.liberar_acesso__formulario-icone:hover {
+    cursor: pointer;
+}
+
+.liberar_acesso__descricao_usuario_encontrado {
+    color: var(--cor-azul);
+    font-weight: bolder;
+}
+
+.liberar_acesso__usuario_encontrado_container {
+    background-color: var(--cor-azul);
+    border-radius: 0.4rem;
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.liberar_acesso__usuario_encotrado_container-foto_perfil {
+    margin-top: 0.4rem;
+    margin-left: 4rem;
+}
+
+.liberar_acesso__usuario_encontrado_container-nome-usuario {
+    color: var(--cor-branca);
+    font-size: 1.8rem;
+    position: absolute;
+    left: 23rem;
+    top: 29rem;
+    font-weight: bolder;
+}
+
+.liberar_acesso__usuario_encontrado_container-cpf-usuario {
+    position: absolute;
+    left: 24rem;
+    top: 30.5rem;
+    color: var(--cor-branca);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.liberar_acesso__botao_liberar_acesso {
+    margin-top: 2rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    color: var(--cor-branca);
+    background-color: var(--cor-azul);
+    font-weight: bolder;
+    border-radius: 0.4rem;
+    margin-left: 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.liberar_acesso__botao_liberar_acesso:hover {
+    cursor: pointer;
+    background-color: var(--cor-azul-opacidade-81);
+}
+
+@media only screen and (min-device-width: 1600px) {
+    .liberar_acesso__titulo {
+        margin-top: 0.4rem;
+    }
+
+    .liberar_acesso__formulario-icone {
+        top: 18rem;
+        left: 32rem;
+    }
+}
+
+@media only screen and (min-device-width: 1900px) {
+    .liberar_acesso__titulo {
+        margin-top: 2rem;
+    }
+
+    .liberar_acesso__formulario-icone {
+        top: 19.6rem;
+        left: 35rem;
+    }
+}
